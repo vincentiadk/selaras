@@ -33,7 +33,7 @@
 											</div>
 											<div class="col-md-4">
 												<ul>
-													<a href="/service/management-consulting"><span style="color: #000;font-size: 1.2em;">IT Consulting </span></a>
+													<a href="/service/it-consulting"><span style="color: #000;font-size: 1.2em;">IT Consulting </span></a>
 													<hr style="margin:0px"/>
 													<li><a href="/service/it-consulting">Costumised App</a></li>
 													<li><a href="http://demosurvey.selaras-consulting.com">Demo Survey Application</a></li>

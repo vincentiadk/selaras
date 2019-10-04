@@ -63,7 +63,7 @@
 		<div class="owl-carousel owl-theme lightcasestudies withhover">
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('upload/management-consulting.jpg')}}" alt="Management Consulting of Selaras Services" class="img-responsive">
+					<img src="{{Storage::url('upload/management-consulting.jpg')}}" alt="Management Consulting of Selaras Services" class="img-responsive lazy">
 					<h4 class="text-center">Management Consulting</h4>
 					<div class="magnifier">
 						<a href="/service/management-consulting"><i class="fa fa-link"></i></a> 
@@ -73,7 +73,7 @@
 
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('upload/ITconsulting.jpeg')}}" alt="IT Consulting of Selaras Services" class="img-responsive">
+					<img src="{{Storage::url('upload/ITconsulting.jpeg')}}" alt="IT Consulting of Selaras Services" class="img-responsive lazy">
 					<h4  class="text-center">IT Consulting</h4>
 					<div class="magnifier">
 						<a href="/service/it-consulting"><i class="fa fa-link"></i></a> 
@@ -83,7 +83,7 @@
 
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('upload/energyoptimizer.jpg')}}" alt="Management Consulting of Selaras Services" class="img-responsive">
+					<img src="{{Storage::url('upload/energyoptimizer.jpg')}}" alt="Management Consulting of Selaras Services" class="img-responsive lazy">
 					<h4  class="text-center">Energy Optimizer</h4>
 					<div class="magnifier">
 						<a href="/service/energy-optimizer"><i class="fa fa-link"></i></a> 
@@ -93,7 +93,7 @@
 
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('upload/market-research.jpg')}}" alt="Management Consulting of Selaras Services" class="img-responsive">
+					<img src="{{Storage::url('upload/market-research.jpg')}}" alt="Management Consulting of Selaras Services" class="img-responsive lazy">
 					<h4  class="text-center">Market Research</h4>
 					<div class="magnifier">
 						<a href="/service/market-research"><i class="fa fa-link"></i></a> 
@@ -125,7 +125,7 @@
 		</div>
 		<div class="row col-md-3" style="margin-left:0px" id="why-choose-us">
 			<div class="feature-img">
-				<img src="{{url('/temp1/images/why-choose-us.png')}}" alt="" class="img-responsive wow fadeInLeft">
+				<img src="{{url('/temp1/images/why-choose-us.png')}}" alt="Why Choose Selaras" class="img-responsive wow fadeInLeft lazy">
 			</div>
 		</div><!-- end row -->
 	</div><!-- end container -->
@@ -143,7 +143,7 @@
 				<div class="service-wrapper wow fadeIn">	
 					<i class="flaticon-competition"></i>
 					<div class="service-details">
-						<h4><a href="service-01.html" title="">Our Destination</a></h4>
+						<h4><a href="" title="">Our Destination</a></h4>
 						<p>To be trusted partner in leadership and management development that give an outstanding results for customers.</p>
 					</div>
 				</div><!-- end service-wrapper -->
@@ -153,7 +153,7 @@
 				<div class="service-wrapper wow fadeIn">	
 					<i class="flaticon-content"></i>
 					<div class="service-details">
-						<h4><a href="service-02.html" title="">Our Purpose</a></h4>
+						<h4><a href="" title="">Our Purpose</a></h4>
 						<p>We - together with customer - build the system of our customer to turn their advantages become superior capability in their industry.</p>
 					</div>
 				</div><!-- end service-wrapper -->
@@ -163,7 +163,7 @@
 				<div class="service-wrapper wow fadeIn">	
 					<i class="flaticon-html"></i>
 					<div class="service-details">
-						<h4><a href="service-02.html" title="">Our Driven</a></h4>
+						<h4><a href="" title="">Our Driven</a></h4>
 						<p>We Create the Future with You with your compliments</p>
 					</div>
 				</div><!-- end service-wrapper -->
@@ -175,7 +175,7 @@
 
 <section class="section lb nopad spotlight style1">
 	<div class="image col-md-4 hidden-sm hidden-xs">
-		<img src="{{Storage::url('upload/future.jpg')}}" alt="" />
+		<img src="{{Storage::url('upload/future.jpg')}}" alt="" class="lazy" />
 	</div>
 	<div class="content">
 		<h2>We create the future with you!!</h2>
@@ -204,7 +204,7 @@
 		<div class="owl-carousel owl-theme lightcasestudies withhover">
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('client/indoprima-1.png')}}" alt="Indo Prima Group" class="img-responsive">
+					<img src="{{Storage::url('client/indoprima-1.png')}}" alt="Indo Prima Group" class="img-responsive lazy">
 					<div class="magnifier">
 						<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
 					</div>
@@ -213,7 +213,7 @@
 
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('client/dirgaputraekapratama.png')}}" alt="PT. Dirgaputra Ekapratama" class="img-responsive">
+					<img src="{{Storage::url('client/dirgaputraekapratama.png')}}" alt="PT. Dirgaputra Ekapratama" class="img-responsive lazy">
 					<div class="magnifier">
 						<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
 					</div>
@@ -222,7 +222,7 @@
 
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('client/Kompindo.png')}}" alt="PT. Kompindo Wiratama" class="img-responsive">
+					<img src="{{Storage::url('client/Kompindo.png')}}" alt="PT. Kompindo Wiratama" class="img-responsive lazy">
 					<div class="magnifier">
 						<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
 					</div>
@@ -231,7 +231,7 @@
 
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('client/rekayasaindustri.png')}}" alt="PT. Rekayasa Industri" class="img-responsive">
+					<img src="{{Storage::url('client/rekayasaindustri.png')}}" alt="PT. Rekayasa Industri" class="img-responsive lazy">
 					<div class="magnifier">
 						<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
 					</div>
@@ -240,7 +240,7 @@
 
 			<div class="item-carousel">
 				<div class="case-box">
-					<img src="{{Storage::url('client/perpusnas.png')}}" alt="Perpustakaan Nasional RI" class="img-responsive">
+					<img src="{{Storage::url('client/perpusnas.png')}}" alt="Perpustakaan Nasional RI" class="img-responsive lazy">
 					<div class="magnifier">
 						<a href="case-studies-single.html"><i class="fa fa-link"></i></a> 
 					</div>

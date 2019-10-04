@@ -18,7 +18,7 @@
 				@foreach($data['blogs'] as $blog)
 				<div class="blog-box clearfix row">
 					<div class="media-box col-md-4">
-						<a href="/blog/{{$blog->slug}}" title="{{$blog->title}}"><img src="/storage/upload/{{$blog->id}}.jpg" alt="{{$blog->title}}" class="img-responsive img-thumbnail"></a>
+						<a href="/blog/{{$blog->slug}}" title="{{$blog->title}}"><img src="/storage/upload/{{$blog->id}}.jpg" alt="{{$blog->title}}" class="img-responsive img-thumbnail lazy"></a>
 					</div><!-- end media-box -->
 					<div class="blog-desc col-md-8">
 						<div class="blog-meta">
@@ -64,7 +64,7 @@
 				<div class="widget clearfix">
 					<h4 class="widget-title">ADVERTISING</h4>
 					<div class="category-widget">
-						<img src="images/banner.gif" alt="" class="img-responsive img-thumbnail">
+						<img src="images/banner.gif" alt="" class="img-responsive img-thumbnail lazy">
 					</div><!-- end category -->
 				</div><!-- end widget -->
 
@@ -88,32 +88,32 @@
 		<div class="row text-center">
 			<div class="col-md-2 col-sm-2 col-xs-6">
 				<div class="client-box">
-					<a href="#"><img src="upload/client_01.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="upload/client_01.png" alt="" class="img-responsive lazy"></a>
 				</div>
 			</div><!-- end col -->
 			<div class="col-md-2 col-sm-2 col-xs-6">
 				<div class="client-box">
-					<a href="#"><img src="upload/client_02.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="upload/client_02.png" alt="" class="img-responsive lazy"></a>
 				</div>
 			</div><!-- end col -->
 			<div class="col-md-2 col-sm-2 col-xs-6">
 				<div class="client-box">
-					<a href="#"><img src="upload/client_03.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="upload/client_03.png" alt="" class="img-responsive lazy"></a>
 				</div>
 			</div><!-- end col -->	
 			<div class="col-md-2 col-sm-2 col-xs-6">
 				<div class="client-box">
-					<a href="#"><img src="upload/client_04.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="upload/client_04.png" alt="" class="img-responsive lazy"></a>
 				</div>
 			</div><!-- end col -->
 			<div class="col-md-2 col-sm-2 col-xs-6">
 				<div class="client-box">
-					<a href="#"><img src="upload/client_05.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="upload/client_05.png" alt="" class="img-responsive lazy"></a>
 				</div>
 			</div><!-- end col -->
 			<div class="col-md-2 col-sm-2 col-xs-6">
 				<div class="client-box">
-					<a href="#"><img src="upload/client_06.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="upload/client_06.png" alt="" class="img-responsive lazy"></a>
 				</div>
 			</div><!-- end col -->	
 		</div><!-- end row -->

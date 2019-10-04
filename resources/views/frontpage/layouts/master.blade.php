@@ -79,6 +79,13 @@
 	<script src="{{url('/temp1/js/animate.js')}}"></script>
 	<script src="{{url('/temp1/js/owl.carousel.js')}}"></script>
 	<script src="{{url('/temp1/js/custom.js')}}"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.8/jquery.lazy.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.8/jquery.lazy.plugins.min.js"></script>
+	<script>
+		$(function() {
+			$('.lazy').lazy();
+		});
+	</script>
 	@yield('script')
 </body>
 </html>

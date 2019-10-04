@@ -23,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if (env('APP_ENV') == 'production') {
+            $this->app->bind('path.public', function() {
+                return "/home/u5338333/public_html";
+              });
+        }
     }
 }

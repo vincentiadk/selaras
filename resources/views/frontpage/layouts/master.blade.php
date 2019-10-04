@@ -18,8 +18,8 @@
 	<meta name="author" content="">
 
 	<!-- Site Icons -->
-	<link rel="shortcut icon" href="{{url('/temp1/images/favicon.ico')}}" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="{{url('/temp1/images/apple-touch-icon.png')}}">
+	<link rel="shortcut icon" href="{{url('/temp1/images/favicon2.ico')}}" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="{{url('/temp1/images/apple-touch-icon2.png')}}">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">

@@ -21,7 +21,7 @@
 									<div class="yamm-content">
 										<div class="row"> 
 											<div class="col-md-4">
-												<span style="color: #000;font-size: 1.2em;">Management Consulting</span>
+												<a href="/service/management-consulting"><span style="color: #000;font-size: 1.2em;">Management Consulting</span></a>
 												<hr style="margin:0px"/>
 												<ul>
 													<li><a href="/service/management-consulting/strategic-management-consulting">Strategic Management Consulting</a></li>
@@ -33,7 +33,7 @@
 											</div>
 											<div class="col-md-4">
 												<ul>
-													<span style="color: #000;font-size: 1.2em;">IT Consulting </span>
+													<a href="/service/management-consulting"><span style="color: #000;font-size: 1.2em;">IT Consulting </span></a>
 													<hr style="margin:0px"/>
 													<li><a href="/service/it-consulting">Costumised App</a></li>
 													<li><a href="http://demosurvey.selaras-consulting.com">Demo Survey Application</a></li>
@@ -41,13 +41,14 @@
 												</ul>
 											</div>
 											<div class="col-md-4">
-												<span style="color: #000;font-size: 1.2em;"> Market Research </span>
+												<a href="/service/market-research"><span style="color: #000;font-size: 1.2em;"> Market Research </span></a>
 												<hr style="margin:0px"/>
 												<ul>
 													<li><a href="/service/market-research">Market Research</a></li>
 												</ul>
 												<br/>
-												<span style="color: #000;font-size: 1.2em;"> Energy Omptimizer</span>
+												<a href="/service/energy-optimizer">
+												<span style="color: #000;font-size: 1.2em;"> Energy Omptimizer</span></a>
 												<hr style="margin:0px"/>
 												<ul>
 													<li><a href="/service/energy-optimizer/performa">Performa</a></li>

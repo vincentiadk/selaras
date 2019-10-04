@@ -48,10 +48,10 @@
 												</ul>
 												<br/>
 												<a href="/service/energy-optimizer">
-												<span style="color: #000;font-size: 1.2em;"> Energy Omptimizer</span></a>
+												<span style="color: #000;font-size: 1.2em;"> Energy Optimizer</span></a>
 												<hr style="margin:0px"/>
 												<ul>
-													<li><a href="/service/energy-optimizer/performa">Performa</a></li>
+													<li><a href="/service/energy-optimizer">Performa</a></li>
 												</ul>
 											</div>
 

@@ -16,9 +16,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/page/{slug}', 'PageController@view');
 Route::get('/service/{category}/{slug}', 'ServiceController@view');
 Route::get('/service/{category}', 'CategoryController@view');
-Route::get('/admin','HomeController@indexAdmin');
-
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{slug}', 'BlogController@view');
 Route::get('/blog/category/{category}', 'BlogController@getByCategory');
 Route::get('/blog/tag/{tag}', 'BlogController@getByTag');
+
+Route::get('/admin','HomeController@indexAdmin');

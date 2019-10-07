@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-4">
-             <div class="widget clearfix">
+               <div class="widget clearfix">
                 <h4 class="widget-title">Subscribe</h4>
                 <div class="newsletter-widget">
                     <p>You can opt out of our newsletters at any time. See our privacy policy.</p>
@@ -15,7 +15,7 @@
                 </div><!-- end newsletter -->
             </div><!-- end widget -->
         </div><!-- end col -->
-        <div class="col-md-4 col-sm-2">
+        <div class="col-md-2 col-sm-2">
             <div class="widget clearfix">
                 <h4 class="widget-title">Company</h4>
                 <ul>
@@ -27,16 +27,26 @@
             </div><!-- end widget -->
         </div><!-- end col -->
 
-        <div class="col-md-4 col-sm-2">
-           <div class="widget clearfix">
-              <h4 class="widget-title">Product & Services</h4>
-              <ul>
-                @foreach($data['categories'] as $category)
-                <li><a href="/service/{{$category->slug}}">{{$category->name}}</a></li>
-                @endforeach
+        <div class="col-md-2 col-sm-2">
+            <div class="widget clearfix">
+                <h4 class="widget-title">Services</h4>
+                <ul>
+                    @foreach($data['categories'] as $category)
+                    <li><a href="/service/{{$category->slug}}">{{$category->name}}</a></li>
+                    @endforeach
+                </ul>
+            </div><!-- end widget -->
+        </div><!-- end col -->
+        <div class="col-md-2 col-sm-2">
+         <div class="widget clearfix">
+            <h4 class="widget-title">Address</h4>
+            <ul>
+                <li>Jl. Sentrasari Mall C1 no 63 Bandung</li>
+                <li> Jawa Barat
+                </li>
             </ul>
-        </div><!-- end widget -->
-    </div><!-- end col -->
+        </div>
+    </div>
 </div><!-- end row -->
 </div><!-- end container -->
 </footer><!-- end primary-footer -->

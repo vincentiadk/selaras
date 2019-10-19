@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Helper;
-use App\Category;
+use App\ServiceCategory;
 use App\Service;
 use SEOMeta;
 use OpenGraph;
@@ -21,7 +21,7 @@ class ServiceController extends Controller
     public function view($category,$slug)
     { 	
         $data = $this->data; 
-    	$data['category'] = Category::where('slug',$category)->get()->first();
+    	$data['category'] = ServiceCategory::where('slug',$category)->get()->first();
 
     	if($category != null) {
     	$service = Service::where('slug',$slug)->get()->first();

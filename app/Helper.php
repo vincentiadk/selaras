@@ -10,7 +10,7 @@ class Helper
 		$data = [];
 		$data['sitename'] = Setting::find('sitename')->value;
 		$data['pages'] = Page::all();
-		$data['categories'] = Category::all(); 
+		$data['categories'] = ServiceCategory::all(); 
 		return $data;
 	}
 }

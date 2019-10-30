@@ -67,7 +67,7 @@ class ServiceCategoryCont extends Controller
 
 	public  function checkSlug($slug)
 	{
-		$count = ServiceCategory::where("slug",$link)->count();
+		$count = ServiceCategory::where("slug",$slug)->count();
 		return $count;
 	}
 

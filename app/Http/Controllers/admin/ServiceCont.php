@@ -69,7 +69,7 @@ class ServiceCont extends Controller
 
 	public  function checkSlug($slug)
 	{
-		$count = Service::where("slug",$link)->count();
+		$count = Service::where("slug",$slug)->count();
 		return $count;
 	}
 

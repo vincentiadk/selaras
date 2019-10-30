@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 use DataTables;
 use App\Service;
 use App\ServiceCategory;
@@ -54,7 +55,7 @@ class ServiceCont extends Controller
 		}
 		$model->title= request('title');
 		$model->body = request('body');
-		$slug = str_slug(request('title'), "_");
+		$slug = Str::slug(request('title'), "_");
 		$checkSlug = $this->checkSlug($slug);
 		if($checkSlug == 0){
 			$model->slug = $slug;

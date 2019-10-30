@@ -64,7 +64,7 @@ class PageCont extends Controller
 			$model->slug = $slug . "_" . $checkSlug;
 		}
 		$model->save();
-		return redirect('/page/edit/'.$model->id);
+		return redirect('/admin/page/edit/'.$model->id);
 	}
 
 	public  function checkSlug($slug)

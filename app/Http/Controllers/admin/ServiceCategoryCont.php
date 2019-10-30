@@ -62,7 +62,7 @@ class ServiceCategoryCont extends Controller
 			$model->slug = $slug . "_" . $checkSlug;
 		}
 		$model->save();
-		return redirect('/admin/service-categories/'.$model->id);
+		return redirect('/admin/service-categories/edit/'.$model->id);
 	}
 
 	public  function checkSlug($slug)

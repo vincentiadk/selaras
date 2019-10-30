@@ -64,7 +64,7 @@ class ServiceCont extends Controller
 			$model->slug = $slug . "_" . $checkSlug;
 		}
 		$model->save();
-		return redirect('/admin/service/'.$model->id);
+		return redirect('/admin/service/edit/'.$model->id);
 	}
 
 	public  function checkSlug($slug)

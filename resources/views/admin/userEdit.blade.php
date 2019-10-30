@@ -20,19 +20,19 @@ $id = $model->id;
 				<div class="row form-group">
 					<label class="control-label col-md-3 col-sm-3 ">Username</label>
 					<div class="col-md-9 col-sm-9 ">
-						<input type="text" placeholder="username" name="username" class="form-control" required>
+						<input type="text" placeholder="username" name="username" class="form-control" required value="{{$model->username}}">
 					</div>
 				</div>
 				<div class="row form-group">
 					<label class="control-label col-md-3 col-sm-3 ">Full Name</label>
 					<div class="col-md-9 col-sm-9 ">
-						<input type="text" placeholder="Full name" name="name" class="form-control" required>
+						<input type="text" placeholder="Full name" name="name" class="form-control" required value="{{$model->name}}">
 					</div>
 				</div>
 				<div class="row form-group">
 					<label class="control-label col-md-3 col-sm-3 ">Email</label>
 					<div class="col-md-9 col-sm-9 ">
-						<input type="email" placeholder="Email" name="email" class="form-control" required>
+						<input type="email" placeholder="Email" name="email" class="form-control" required value="{{$model->email}}">
 					</div>
 				</div>
 				<div class="row form-group">
@@ -50,7 +50,7 @@ $id = $model->id;
 				<div class="row form-group">
 					<label class="control-label col-md-3 col-sm-3 ">Biografi</label>
 					<div class="col-md-9 col-sm-9 ">
-						<textarea class="resizable_textarea form-control" placeholder="Explain yourself here" name="bio"></textarea>
+						<textarea class="resizable_textarea form-control" placeholder="Explain yourself here" name="bio" value="{{$model->bio}}"></textarea>
 					</div>
 				</div>
 

@@ -25,6 +25,11 @@ class PageCont extends Controller
 			$action .= " <button class='btn btn-danger' onclick='deletePage(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
 			return  $action;  
 		})
+		->editColumn('is_static', function($model){
+			if($model->is_static == 1) {
+				return "Static Page";
+			} else return "Dynamic Page";
+		})
 		->addIndexColumn()
 		->rawColumns(['action']);
 		return $dataTable->make(true);
@@ -44,6 +49,7 @@ class PageCont extends Controller
 	{
 		if($id == "new") {
 			$model = new Page();
+			$model->is_static = 1;
 		} else {
 			$model = Page::find($id);
 		}
@@ -69,7 +75,7 @@ class PageCont extends Controller
 
 	public function delete($id)
     {
-        $model= Page::find($id);
+        $model = Page::find($id);
         $model->delete();
         return response()->json("Halaman berhasil di hapus");
     }

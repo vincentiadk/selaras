@@ -34,7 +34,7 @@ class UserCont extends Controller
 	{
 		if($id == "new") {
 			$model = new User();
-		}else {
+		} else {
 			$model = User::find($id);
 		}
 		return view('admin.userEdit', compact('model'));
@@ -45,7 +45,7 @@ class UserCont extends Controller
 		$error = "";
 		if($id == "new") {
 			$model = new User();
-			if(request('password') == ""){
+			if(request('password') == "") {
 				$model->password = BCrypt(request('username'));
 			} else {
 				$model->password = BCrypt(request('password'));
@@ -53,7 +53,7 @@ class UserCont extends Controller
 		} else {
 			$model = User::find($id);
 			if(request('password') != "") {
-				if(request('passwordconfirm') == ""){
+				if(request('passwordconfirm') == "") {
 					$error .= "Fill confirmation password. ";
 				} else if( request('password') != request('passwordconfirm')){
 					$error .= "Password and Confirmation must be same. ";
@@ -66,22 +66,26 @@ class UserCont extends Controller
 		}
 
 		if($this->checkEmail(request('username')) > 0) {
-			$error .= "Username ".request('username')." is already exists. ";
+			$error .= "Username ".request('username'). " is already exists. ";
 			return redirect()->back();
 		} else {
 			$model->username = request('username');
 		}
 		
 		if($this->checkEmail(request('email')) > 0) {
-			$error .= "Email ".request('email')." is already exists. ";
+			$error .= "Email ".request('email'). " is already exists. ";
 			return redirect()->back();
 		} else {
 			$model->email = request('email');
 		}
-
+		if(request('name')==""){
+			$model->name = request('username');
+		} else {
+			$model->name = request('name');
+		}
 		$model->bio = request('bio');
 		$model->save();
-		return redirect('/user/edit/'.$model->id);
+		return redirect('/user/edit/' .$model->id);
 	}
 
 	public function delete($id)
@@ -96,7 +100,7 @@ class UserCont extends Controller
 		$count = User::where("email",$email)->count();
 		return $count;
 	}
-	
+
 	public function checkUsername($email)
 	{
 		$count = User::where("username",$email)->count();

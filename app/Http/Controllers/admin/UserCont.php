@@ -89,7 +89,7 @@ class UserCont extends Controller
 		}
 		$model->bio = request('bio');
 		$model->save();
-		return redirect('/user/edit/' .$model->id);
+		return redirect('/admin/user/edit/' .$model->id);
 	}
 
 	public function delete($id)

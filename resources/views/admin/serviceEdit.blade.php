@@ -37,15 +37,9 @@ $id = $model->id;
 					</div>
 				</div>
 				<div class="form-group row">
-					<div class="col-md-9 col-sm-9  offset-md-3">
-						<input type="submit" class="btn btn-success" value= "Save" name="savepub"/>
-						<button class="btn btn-info" onclick="window.open('/admin/service','_self')">Go To List Services</button>
-					</div>
-				</div>
-				<div class="form-group row">
 					<label class="control-label col-md-2 col-sm-2 ">Service Category</label>
 					<div class="col-md-5 col-sm-5 ">
-						<select class="select2_single form-control" tabindex="-1" name="blog_category_id">
+						<select class="select2_single form-control" tabindex="-1" name="category_id">
 							<option></option>
 							@foreach($serviceCat as $cat)
 
@@ -54,6 +48,13 @@ $id = $model->id;
 						</select>
 					</div>
 				</div>
+				<div class="form-group row">
+					<div class="col-md-9 col-sm-9  offset-md-3">
+						<input type="submit" class="btn btn-success" value= "Save" name="savepub"/>
+						<button class="btn btn-info" onclick="window.open('/admin/service','_self')">Go To List Services</button>
+					</div>
+				</div>
+
 			</form>
 		</div>
 	</div>

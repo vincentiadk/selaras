@@ -27,7 +27,7 @@ $id = $model->id;
 				<div class="row form-group">
 					<label class="control-label col-md-2 col-sm-2 ">Description</label>
 					<div class="col-md-10 col-sm-10 ">
-						<textarea class="resizable_textarea form-control" name="description">{{$model->description}}</textarea>
+						<textarea class="resizable_textarea form-control" name="description">{{$model->brief_description}}</textarea>
 					</div>
 				</div>
 				<div class="row form-group">

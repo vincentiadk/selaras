@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\ServiceCategory;
+use App\Service;
 use DataTables;
 
 class ServiceCategoryCont extends Controller
@@ -23,6 +24,9 @@ class ServiceCategoryCont extends Controller
 
 			$action .= " <button class='btn btn-danger' onclick='deleteServiceCat(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
 			return  $action;  
+		})
+		->addColumn('total', function($model) {
+			return Service::where('Category_id',$model->id)->count() . " entri";
 		})
 		->addIndexColumn()
 		->rawColumns(['action']);

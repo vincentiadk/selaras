@@ -22,7 +22,7 @@
         });
         $.fn.dataTable.ext.errMode = 'alert';
 
-        deleteArtikel=function(id){
+        deleteBlog=function(id){
             if(confirm('Apa Anda yakin akan menghapus blog post ini?')){      
                 $.ajax({
                     type: "GET",

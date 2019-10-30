@@ -25,7 +25,7 @@ class BlogCont extends Controller
 			$action = "";
 			$action .= "  <a class='btn btn-success'  href='/admin/blog/edit/".$model->id."' data-toggle='tooltip' title='Edit!'>  <i class='fa fa-edit'></i> </a>";
 
-			$action .= " <button class='btn btn-danger' onclick='Delete(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
+			$action .= " <button class='btn btn-danger' onclick='deleteBlog(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
 			return  $action;  
 		})
 		->editColumn('blog_category_id',function($model) {

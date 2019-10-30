@@ -65,19 +65,22 @@ class UserCont extends Controller
 				}
 			}
 		}
-
-		if($this->checkEmail(request('username')) > 0) {
-			$error .= "Username ".request('username'). " is already exists. ";
-			return redirect()->back()->withErrors([$error]);
-		} else {
-			$model->username = request('username');
+		if(request('username') != $model->username) {
+			if($this->checkUsername(request('username')) > 0) {
+				$error .= "Username " . request('username') . " is already exists. ";
+				return redirect()->back()->withErrors([$error]);
+			} else {
+				$model->username = request('username');
+			}
 		}
-		
-		if($this->checkEmail(request('email')) > 0) {
-			$error .= "Email ".request('email'). " is already exists. ";
-			return redirect()->back()->withErrors([$error]);
-		} else {
-			$model->email = request('email');
+
+		if(request('email') != $model->email){
+			if($this->checkEmail(request('email')) > 0) {
+				$error .= "Email ".request('email') . " is already exists. ";
+				return redirect()->back()->withErrors([$error]);
+			} else {
+				$model->email = request('email');
+			}
 		}
 		if(request('name')==""){
 			$model->name = request('username');

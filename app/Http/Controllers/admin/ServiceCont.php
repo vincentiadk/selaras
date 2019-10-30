@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DataTables;
 use App\Service;
+use App\ServiceCategory;
 
 class ServiceCont extends Controller
 {
@@ -23,6 +24,11 @@ class ServiceCont extends Controller
 
 			$action .= " <button class='btn btn-danger' onclick='deleteService(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
 			return  $action;  
+		})
+		->editColumn('category_id', function($model) {
+			if($model->category_id != "") {
+				return ServiceCategory::find($model->category_id)->name;
+			}
 		})
 		->addIndexColumn()
 		->rawColumns(['action']);

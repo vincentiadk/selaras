@@ -14,6 +14,7 @@
             { data: 'DT_RowIndex', name: 'DT_RowIndex'},
             { data: 'name', name: 'name'},
             { data: 'slug', name: 'slug' },
+            { data: 'total', name: 'total', orderable: false, searchable: false },
             { data: 'created_at', name: 'created_at' },
             { data: 'action', name: 'action', orderable: false, searchable: false},
             ]
@@ -55,6 +56,7 @@
                         <th class="column-title">No </th>
                         <th class="column-title">Category Name </th>
                         <th class="column-title">Slug </th>
+                        <th class="column-title">Total Services </th>
                         <th class="column-title">Created At </th>
                         <th class="column-title no-link last"><span class="nobr">Action</span>
                         </th>

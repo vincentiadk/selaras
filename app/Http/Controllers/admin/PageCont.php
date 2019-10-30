@@ -22,7 +22,7 @@ class PageCont extends Controller
 			$action = "";
 			$action .= "  <a class='btn btn-success'  href='/admin/page/edit/".$model->id."' data-toggle='tooltip' title='Edit!'>  <i class='fa fa-edit'></i> </a>";
 
-			$action .= " <button class='btn btn-danger' onclick='Delete(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
+			$action .= " <button class='btn btn-danger' onclick='deletePage(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
 			return  $action;  
 		})
 		->addIndexColumn()

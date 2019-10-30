@@ -42,7 +42,18 @@ $id = $model->id;
 						<button class="btn btn-info" onclick="window.open('/admin/service','_self')">Go To List Services</button>
 					</div>
 				</div>
+				<div class="form-group row">
+					<label class="control-label col-md-2 col-sm-2 ">Service Category</label>
+					<div class="col-md-5 col-sm-5 ">
+						<select class="select2_single form-control" tabindex="-1" name="blog_category_id">
+							<option></option>
+							@foreach($serviceCat as $cat)
 
+							<option value="{{$cat->id}}" @if($cat->id == $model->category_id) selected @endif>{{$cat->name}}</option>
+							@endforeach
+						</select>
+					</div>
+				</div>
 			</form>
 		</div>
 	</div>

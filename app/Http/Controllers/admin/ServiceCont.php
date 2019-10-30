@@ -43,7 +43,8 @@ class ServiceCont extends Controller
 		}else {
 			$model = Service::find($id);
 		}
-		return view('admin.serviceEdit', compact('model'));
+		$serviceCat = ServiceCategory::all();
+		return view('admin.serviceEdit', compact('model', 'serviceCat'));
 	}
 
 	public function submit($id)

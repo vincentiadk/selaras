@@ -4,24 +4,24 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\ServiceCategory;
 use DataTables;
-use App\Service;
 
-class ServiceCont extends Controller
+class ServiceCategoryCont extends Controller
 {
     public function index()
 	{
-		return view('admin.serviceList');
+		return view('admin.serviceCategoryList');
 	}
 	public function list()
 	{
-		$model = Service::query();
+		$model = ServiceCategory::query();
 		$dataTable = \DataTables::eloquent($model)
 		->addColumn('action', function($model) {
 			$action = "";
-			$action .= "  <a class='btn btn-success'  href='/admin/service/edit/".$model->id."' data-toggle='tooltip' title='Edit!'>  <i class='fa fa-edit'></i> </a>";
+			$action .= "  <a class='btn btn-success'  href='/admin/service-categories/edit/".$model->id."' data-toggle='tooltip' title='Edit!'>  <i class='fa fa-edit'></i> </a>";
 
-			$action .= " <button class='btn btn-danger' onclick='deleteService(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
+			$action .= " <button class='btn btn-danger' onclick='deleteServiceCat(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
 			return  $action;  
 		})
 		->addIndexColumn()
@@ -32,19 +32,19 @@ class ServiceCont extends Controller
 	public function edit($id)
 	{
 		if($id == "new") {
-			$model = new Service();
+			$model = new ServiceCategory();
 		}else {
-			$model = Service::find($id);
+			$model = ServiceCategory::find($id);
 		}
-		return view('admin.serviceEdit', compact('model'));
+		return view('admin.serviceCategoryEdit', compact('model'));
 	}
 
 	public function submit($id)
 	{
 		if($id == "new") {
-			$model = new Service();
+			$model = new ServiceCategory();
 		} else {
-			$model = Service::find($id);
+			$model = ServiceCategory::find($id);
 		}
 		$model->title= request('title');
 		$model->body = request('body');
@@ -57,19 +57,19 @@ class ServiceCont extends Controller
 			$model->slug = $slug . "_" . $checkSlug;
 		}
 		$model->save();
-		return redirect('/admin/service/'.$model->id);
+		return redirect('/admin/service-categories/'.$model->id);
 	}
 
 	public  function checkSlug($slug)
 	{
-		$count = Service::where("slug",$link)->count();
+		$count = ServiceCategory::where("slug",$link)->count();
 		return $count;
 	}
 
 	public function delete($id)
     {
-        $model= Service::find($id);
+        $model= ServiceCategory::find($id);
         $model->delete();
-        return response()->json("Halaman berhasil di hapus");
+        return response()->json("Service Category berhasil di hapus");
     }
 }

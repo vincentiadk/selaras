@@ -65,12 +65,6 @@
                         <a href="/admin"><i class="fa fa-home"></i> Home </a> 
                     </li>
                     <li>
-                        <a href="/admin/page"><i class="fa fa-edit"></i> Halaman</a>
-                    </li>
-                    <li>
-                        <a href="/admin/user"><i class="fa fa-user"></i> User</a>
-                    </li>
-                    <li>
                         <a><i class="fa fa-table"></i> Services <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="/admin/service-categories">Service Category</a></li>
@@ -84,6 +78,13 @@
                             <li><a href="/admin/blog">Semua Blog</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="/admin/page"><i class="fa fa-edit"></i> Halaman</a>
+                    </li>
+                    <li>
+                        <a href="/admin/user"><i class="fa fa-user"></i> User</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -215,9 +216,9 @@
 <!-- footer content -->
 <footer>
     <div class="pull-right">
-      Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-  </div>
-  <div class="clearfix"></div>
+       Selaras Consulting - 2019
+   </div>
+   <div class="clearfix"></div>
 </footer>
 <!-- /footer content -->
 </div>

@@ -45,6 +45,13 @@ Route::group(['prefix' => 'admin',  'middleware' => 'auth'], function()
 	Route::post('/blog/submit/{id}','admin\BlogCont@submit');
 	Route::get('/blog/delete/{id}','admin\BlogCont@delete');
 
+
+	Route::get('/blog-categories','admin\BlogCategoryCont@index');
+	Route::get('/blog-categories/list','admin\BlogCategoryCont@list');
+	Route::get('/blog-categories/edit/{id}','admin\BlogCategoryCont@edit');
+	Route::post('/blog-categories/submit/{id}','admin\BlogCategoryCont@submit');
+	Route::get('/blog-categories/delete/{id}','admin\BlogCategoryCont@delete');
+
 	Route::get('/service','admin\ServiceCont@index');
 	Route::get('/service/list','admin\ServiceCont@list');
 	Route::get('/service/edit/{id}','admin\ServiceCont@edit');

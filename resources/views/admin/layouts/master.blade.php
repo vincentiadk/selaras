@@ -37,7 +37,7 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Selaras</span></a>
         </div>
 
         <div class="clearfix"></div>
@@ -80,7 +80,7 @@
                     <li>
                         <a><i class="fa fa-bar-chart-o"></i> Blog Post<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="/admin/blog-categories">Service Category</a></li>
+                            <li><a href="/admin/blog-categories">Blog Category</a></li>
                             <li><a href="/admin/blog">Semua Blog</a></li>
                         </ul>
                     </li>

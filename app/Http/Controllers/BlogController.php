@@ -56,7 +56,7 @@ class BlogController extends Controller
 		$data = $this->data;
 		$data['blogcategories'] = BlogCategory::all();
 		$cat = BlogCategory::where('slug',$category)->first();
-		$data['blogs'] = $cat->blogs->paginate(10);
+		$data['blogs'] = Blog::where('blog_category_id',$cat->id)->paginate(10);
 		return view('frontpage.blog',compact('data'));    
 	}
 
@@ -67,4 +67,5 @@ class BlogController extends Controller
 		$data['blogs'] = Blog::where('tags', '%' . $tag .'%')->paginate(10);
 		return view('frontpage.blog',compact('data'));    
 	}
+
 }

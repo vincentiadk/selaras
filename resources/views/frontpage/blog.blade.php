@@ -23,8 +23,8 @@
 					<div class="blog-desc col-md-8">
 						<div class="blog-meta">
 							<ul class="list-inline">
-								<li><a href="#"><i class="fa fa-folder-open-o"></i> SEO Tips</a></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i> 21 Comments</a></li>
+								<li><a href="/blog/category/{{$blog->category->slug}}"><i class="fa fa-folder-open-o"></i> {{$blog->category->name}}</a></li>
+								<!--<li><a href="#"><i class="fa fa-comments-o"></i> 21 Comments</a></li>-->
 							</ul>
 						</div><!-- end meta -->
 						<h3><a href="/blog/{{$blog->slug}}" title="{{$blog->title}}">{{$blog->title}}</a></h3>
@@ -73,7 +73,7 @@
 					<div class="category-widget">
 						<ul>
 							@foreach($data['blogcategories'] as $cat)
-							<li><a href="/blog/category/{{$cat->slug}}">{{$cat->title}}</a></li>
+							<li><a href="/blog/category/{{$cat->slug}}">{{$cat->name}}</a></li>
 							@endforeach
 						</ul>
 					</div><!-- end category -->

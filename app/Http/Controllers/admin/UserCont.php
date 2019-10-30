@@ -55,9 +55,10 @@ class UserCont extends Controller
 			if(request('password') != "") {
 				if(request('passwordconfirm') == "") {
 					$error .= "Fill confirmation password. ";
+					return redirect()->back()->withErrors([$error]);
 				} else if( request('password') != request('passwordconfirm')){
 					$error .= "Password and Confirmation must be same. ";
-					return redirect()->back();
+					return redirect()->back()->withErrors([$error]);
 				}
 				else if( request('password') == request('passwordconfirm')){
 					$model->password = BCrypt(request('password'));
@@ -67,14 +68,14 @@ class UserCont extends Controller
 
 		if($this->checkEmail(request('username')) > 0) {
 			$error .= "Username ".request('username'). " is already exists. ";
-			return redirect()->back();
+			return redirect()->back()->withErrors([$error]);
 		} else {
 			$model->username = request('username');
 		}
 		
 		if($this->checkEmail(request('email')) > 0) {
 			$error .= "Email ".request('email'). " is already exists. ";
-			return redirect()->back();
+			return redirect()->back()->withErrors([$error]);
 		} else {
 			$model->email = request('email');
 		}

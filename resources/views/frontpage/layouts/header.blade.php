@@ -25,7 +25,7 @@
 												<hr style="margin:0px"/>
 												<ul>
 													<li><a href="/service/management-consulting/strategic-management-consulting">Strategic Management Consulting</a></li>
-													<li><a href="/service/management-consulting/hr-consulting">HR Consulting</a></li>
+													<li><a href="/service/management-consulting/human-resource-consulting">HR Consulting</a></li>
 													<li><a href="/service/management-consulting/operational-excellence-consulting">Operational Excellence Consulting</a></li>
 													<li><a href="/service/management-consulting/training">Training</a></li>
 

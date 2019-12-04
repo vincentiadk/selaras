@@ -56,7 +56,7 @@ class ServiceCont extends Controller
 		}
 		$model->title= request('title');
 		$model->body = request('body');
-		$model->category_id = request('category_id');
+		$model->service_category_id = request('category_id');
 		$slug = Str::slug(request('title'), "_");
 		$checkSlug = $this->checkSlug($slug);
 		if($checkSlug == 0){

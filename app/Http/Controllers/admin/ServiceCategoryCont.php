@@ -11,7 +11,7 @@ use DataTables;
 
 class ServiceCategoryCont extends Controller
 {
-    public function index()
+	public function index()
 	{
 		return view('admin.serviceCategoryList');
 	}
@@ -48,19 +48,20 @@ class ServiceCategoryCont extends Controller
 	{
 		if($id == "new") {
 			$model = new ServiceCategory();
+			$slug = Str::slug(request('title'), "-");
+			$checkSlug = $this->checkSlug($slug);
+			if($checkSlug == 0){
+				$model->slug = $slug;
+			} else {
+				$checkSlug ++;
+				$model->slug = $slug . "-" . $checkSlug;
+			}
 		} else {
 			$model = ServiceCategory::find($id);
 		}
 		$model->title= request('title');
 		$model->body = request('body');
-		$slug = Str::slug(request('title'), "-");
-		$checkSlug = $this->checkSlug($slug);
-		if($checkSlug == 0){
-			$model->slug = $slug;
-		} else {
-			$checkSlug ++;
-			$model->slug = $slug . "_" . $checkSlug;
-		}
+		
 		$model->save();
 		return redirect('/admin/service-categories/edit/'.$model->id);
 	}
@@ -72,9 +73,9 @@ class ServiceCategoryCont extends Controller
 	}
 
 	public function delete($id)
-    {
-        $model= ServiceCategory::find($id);
-        $model->delete();
-        return response()->json("Service Category berhasil di hapus");
-    }
+	{
+		$model= ServiceCategory::find($id);
+		$model->delete();
+		return response()->json("Service Category berhasil di hapus");
+	}
 }

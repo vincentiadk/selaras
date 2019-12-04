@@ -43,7 +43,7 @@ $id = $model->id;
 							<option></option>
 							@foreach($serviceCat as $cat)
 
-							<option value="{{$cat->id}}" @if($cat->id == $model->category_id) selected @endif>{{$cat->name}}</option>
+							<option value="{{$cat->id}}" @if($cat->id == $model->service_category_id) selected @endif>{{$cat->name}}</option>
 							@endforeach
 						</select>
 					</div>

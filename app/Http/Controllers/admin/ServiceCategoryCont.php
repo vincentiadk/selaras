@@ -27,7 +27,7 @@ class ServiceCategoryCont extends Controller
 			return  $action;  
 		})
 		->addColumn('total', function($model) {
-			return Service::where('Category_id',$model->id)->count() . " entri";
+			return Service::where('service_category_id',$model->id)->count() . " entri";
 		})
 		->addIndexColumn()
 		->rawColumns(['action']);

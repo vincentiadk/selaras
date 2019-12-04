@@ -13,7 +13,7 @@
             columns: [
             { data: 'DT_RowIndex', name: 'DT_RowIndex'},
             { data: 'title', name: 'title'},
-            { data: 'category_id', name : 'category_id'},
+            { data: 'service_category_id', name : 'service_category_id'},
             { data: 'created_at', name: 'created_at' },
             { data: 'action', name: 'action', orderable: false, searchable: false},
             ]

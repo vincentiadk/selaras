@@ -26,9 +26,9 @@ class ServiceCont extends Controller
 			$action .= " <button class='btn btn-danger' onclick='deleteService(".$model->id.")' data-toggle='tooltip' title='Delete!'>  <i class='fa fa-trash'></i> </button>";
 			return  $action;  
 		})
-		->editColumn('category_id', function($model) {
-			if($model->category_id != "") {
-				return ServiceCategory::find($model->category_id)->name;
+		->editColumn('service_category_id', function($model) {
+			if($model->service_category_id != "") {
+				return ServiceCategory::find($model->service_category_id)->name;
 			}
 		})
 		->addIndexColumn()

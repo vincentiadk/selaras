@@ -53,7 +53,7 @@ class ServiceCategoryCont extends Controller
 		}
 		$model->title= request('title');
 		$model->body = request('body');
-		$slug = Str::slug(request('title'), "_");
+		$slug = Str::slug(request('title'), "-");
 		$checkSlug = $this->checkSlug($slug);
 		if($checkSlug == 0){
 			$model->slug = $slug;

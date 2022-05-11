@@ -47,6 +47,7 @@
         <div class="x_title">
             <h2>Services <small>pengaturan service</small></h2>
             <div class="clearfix"></div>
+            <a href="/admin/service/edit/new" class="btn btn-primary">+ Add New</a>
         </div>
         <div class="x_content">
             <table id="tblData" class="table table-striped table-bordered">

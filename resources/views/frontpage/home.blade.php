@@ -100,6 +100,16 @@
 					</div>
 				</div><!-- end case-box -->
 			</div><!-- end col -->
+
+			<div class="item-carousel">
+				<div class="case-box">
+					<img src="{{Storage::url('upload/biogas-technology.jpg')}}" alt="Circular Based Waste Management : BIOGAS TECHNOLOGY" class="img-responsive lazy">
+					<h4  class="text-center">Circular Based Waste Management</h4>
+					<div class="magnifier">
+						<a href="/service/circular-based-waste-management"><i class="fa fa-link"></i></a> 
+					</div>
+				</div><!-- end case-box -->
+			</div><!-- end col -->
 		</div>
 		<div class="section-button clearfix text-center">
 			<p class="lead">If you are looking one of our service for your company please get a quote!</p>

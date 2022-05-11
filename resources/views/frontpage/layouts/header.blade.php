@@ -39,6 +39,11 @@
 													<li><a href="http://demosurvey.selaras-consulting.com">Demo Survey Application</a></li>
 													<li><a href="http://demoharvester.selaras-consulting.com">Demo Harvester Application</a></li>
 												</ul>
+												<ul>
+													<a href="/service/circular-based-waste-management"><span style="color: #000;font-size: 1.2em;">Circular Based Waste Management </span></a>
+													<hr style="margin:0px"/>
+													<li><a href="/service/circular-based-waste-management">Biogas Techonology</a></li>
+												</ul>
 											</div>
 											<div class="col-md-4">
 												<a href="/service/market-research"><span style="color: #000;font-size: 1.2em;"> Market Research </span></a>

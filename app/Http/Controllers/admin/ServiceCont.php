@@ -51,21 +51,21 @@ class ServiceCont extends Controller
 	{
 		if($id == "new") {
 			$model = new Service();
-			$slug = Str::slug(request('title'), "-");
-			$checkSlug = $this->checkSlug($slug);
-			if($checkSlug == 0){
-				$model->slug = $slug;
-			} else {
-				$checkSlug ++;
-				$model->slug = $slug . "_" . $checkSlug;
-			}
+			
 		} else {
 			$model = Service::find($id);
+		}
+		$slug = Str::slug(request('title'), "-");
+		$checkSlug = $this->checkSlug($slug);
+		if($checkSlug == 0) {
+			$model->slug = $slug;
+		} else {
+			$checkSlug ++;
+			$model->slug = $slug . "_" . $checkSlug;
 		}
 		$model->title= request('title');
 		$model->body = request('body');
 		$model->service_category_id = request('category_id');
-		
 		$model->save();
 		return redirect('/admin/service/edit/'.$model->id);
 	}

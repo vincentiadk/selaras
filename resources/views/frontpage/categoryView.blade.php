@@ -17,7 +17,7 @@
 			<hr>
 			<p class="lead">{{$data['category']['brief_description']}}</p>
 		</div><!-- end section-title -->
-
+		@if($data['category']->services->count() > 0)
 		<div class="row custom-features">
 			@foreach($data['category']->services as $service)
 			<div class="col-md-4">
@@ -30,6 +30,7 @@
 			</div><!-- end col -->
 			@endforeach
 		</div><!-- end row -->
+		@endif
 	</div><!-- end container -->
 </section><!-- end section -->
 @endif

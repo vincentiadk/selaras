@@ -15,19 +15,19 @@ $id = $model->id;
 		</div>
 		<div class="x_content">
 			@include('admin.layouts.alerts')
-			<form method="post" action='/admin/service/submit/{{$id}}' data-parsley-validate id="demo-form">
+			<form method="post" action='/admin/service-categories/submit/{{$id}}' data-parsley-validate id="demo-form">
 				{{csrf_field()}}
 				<div class="row form-group">
-					<label class="control-label col-md-2 col-sm-2 ">Service Title</label>
+					<label class="control-label col-md-2 col-sm-2 ">Service Category Name</label>
 					<div class="col-md-10 col-sm-10 ">
-						<input type="text" placeholder="Category name" name="title" class="form-control" required value="{{$model->title}}">
+						<input type="text" placeholder="Category name" name="name" class="form-control" required value="{{$model->name}}">
 					</div>
 				</div>
 				
 				<div class="row form-group">
 					<label class="control-label col-md-2 col-sm-2 ">Description</label>
 					<div class="col-md-10 col-sm-10 ">
-						<textarea class="resizable_textarea form-control" name="description">{{$model->description}}</textarea>
+						<textarea class="resizable_textarea form-control" name="brief_description">{{$model->brief_description}}</textarea>
 					</div>
 				</div>
 				<div class="row form-group">

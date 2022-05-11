@@ -143,7 +143,7 @@
 <!-- footer content -->
 <footer>
     <div class="pull-right">
-       Selaras Consulting - 2019
+       Selaras Consulting - 2022
    </div>
    <div class="clearfix"></div>
 </footer>

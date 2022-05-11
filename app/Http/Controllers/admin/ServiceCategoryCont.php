@@ -48,7 +48,7 @@ class ServiceCategoryCont extends Controller
 	{
 		if($id == "new") {
 			$model = new ServiceCategory();
-			$slug = Str::slug(request('title'), "-");
+			$slug = Str::slug(request('name'), "-");
 			$checkSlug = $this->checkSlug($slug);
 			if($checkSlug == 0){
 				$model->slug = $slug;
@@ -59,9 +59,9 @@ class ServiceCategoryCont extends Controller
 		} else {
 			$model = ServiceCategory::find($id);
 		}
-		$model->title= request('title');
+		$model->name= request('name');
 		$model->body = request('body');
-		
+		$model->brief_description = request('brief_description');
 		$model->save();
 		return redirect('/admin/service-categories/edit/'.$model->id);
 	}

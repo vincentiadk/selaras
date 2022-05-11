@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <p>2010 - 2019 &copy; CV. Selaras Strategi Performa. All Rights Reserved</p>
+                <p>2010 - 2022 &copy; CV. Selaras Strategi Performa. All Rights Reserved</p>
             </div>
         </div><!-- end row -->
     </div><!-- end container -->
